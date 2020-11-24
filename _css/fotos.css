@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+ul#fotos-album{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    list-style: none;
+    overflow: hidden;
+}
+
+ul#fotos-album li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    
+    /*Comando para diminuir o tempo do zoom*/
+    transition: all 0.3s ease-in;
+}
+
+ul#fotos-album li span{
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#fotos-album li:hover {
+    /*como para aumentar o tamanho da foto*/
+    transform: scale(1.5);
+}
+
+ul#fotos-album li:hover span{
+    opacity: 1;
+}
+
+ul#fotos-album li#fotos01{
+    background: url('../_imagens/galeria-01.jpg') no-repeat;
+    
+    /*Esse comando ira centralizar a posição da foto*/
+    background-position: 50% 50%;
+
+    /*tamanho original da imagem*/
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#fotos-album li#fotos01:hover{
+
+    /*Esses comandos irão fazer a foto diminuir de tamanho para se encaixar com a caixa*/
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+ul#fotos-album li#fotos02{
+    background: url('../_imagens/galeria-02.jpg') no-repeat;
+
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#fotos-album li#fotos02:hover{
+
+    /*Esses comandos irão fazer a foto diminuir de tamanho para se encaixar com a caixa*/
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+ul#fotos-album li#fotos03{
+    background: url('../_imagens/galeria-03.jpg') no-repeat;
+
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#fotos-album li#fotos03:hover{
+
+    /*Esses comandos irão fazer a foto diminuir de tamanho para se encaixar com a caixa*/
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+ul#fotos-album li#fotos04{
+    background: url('../_imagens/galeria-04.jpg') no-repeat;
+
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#fotos-album li#fotos04:hover{
+
+    /*Esses comandos irão fazer a foto diminuir de tamanho para se encaixar com a caixa*/
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+ul#fotos-album li#fotos05{
+    background: url('../_imagens/galeria-05.jpg') no-repeat;
+
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#fotos-album li#fotos05:hover{
+
+    /*Esses comandos irão fazer a foto diminuir de tamanho para se encaixar com a caixa*/
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+ul#fotos-album li#fotos06{
+    background: url('../_imagens/galeria-06.jpg') no-repeat;
+
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#fotos-album li#fotos06:hover{
+
+    /*Esses comandos irão fazer a foto diminuir de tamanho para se encaixar com a caixa*/
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}

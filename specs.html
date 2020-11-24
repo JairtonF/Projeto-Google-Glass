@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tudo sobre o GLASS</title>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+        <link rel="stylesheet" href="_css/specs.css">
+    </head>
+    <!--Link com o Javascript, importante ressaltar que é possível escrever em javascript aqui desde que seja entre os scripts, mas ficaria muito grande o código-->
+    <script src="_javascript/funcoes.js"></script>
+    <body>
+        <!--Body será a informação legível para o usuário/leitor do documento-->
+
+        <!--O Div define uma divisão ou seção em um documento HTML. O elemento div é frequentemente usado como um contêiner para outros elementos, o que facilita na estilização de blocos. -->
+        <div id="interface">
+            <!-- Comando que representa um grupo de suporte introdutório ou navegacional-->
+            <header id="cabecalho">
+                <!-- Comando que tem a função de agrupar dois ou mais elementos-->
+                <hgroup>
+                <h1>Google Glass</h1> 
+                <h2>A revolução do Google está chegando</h2>
+                </hgroup>
+                <!-- Comando para adicionar uma imagem-->
+                <img id="icone" src="_imagens/especificacoes.png">
+                
+                <!-- Comando para o Menu de navegação, ou seja, uma seção com links de navegação. -->
+                <nav id="menu">
+                <h1> Menu Principal </h1>
+                <!-- Comando para listas ordenadas "ol", comando para listas não ordenadas "ul", você pode definir tipos de ordenação e onde começar-->
+                    <ul>
+                        <!-- Comando para os itens da lista -->
+                        <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"> <a href="index.html">Home</a></li>
+                        <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"> <a href="specs.html">Especificações</a></li>
+                        <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"> <a href="fotos.html">Fotos</a></li>
+                        <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"> <a href="multimidia.html">Multimídia</a></li>
+                        <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"> <a href="fale-conosco.html">Fale conosco</a></li>
+                    </ol>
+                </nav>
+            </header>
+
+<section id="corpo-full">
+    <!--A tag article especifica conteúdo independente, contido, que faz sentido sozinho e é possivel distribui-lo independente do site-->
+    <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+            <hgroup>    
+                <h3>Glass > &nbsp; Especificações</h3>
+                <h1> Raio-X no Google Glass</h1>
+                <h2>por Gustavo Guanabara</h2>
+                <h3 class="direita">em 01/Maio/2013</h3>
+        </header>
+    </hgroup>
+
+    <p> Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações. </p>
+
+    <section id="conteudo">
+        <img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa">
+
+        <!--O comando "map" é usado com os elementos <area> para definir um mapa de imagem (a área clicável do link)-->
+        <map name="meumapa">
+            <!--o map so reconhece 3 formas retangulo, circulo e poligono-->
+            <area shape="rect" coords="184,210,267,254" href="google-glass.html#tela" target="janela">
+            <area shape="circle" coords="158,244,11" href="google-glass.html#camera" target="janela">
+            <area shape="circle" coords="76,53,12" href="google-glass.html#bateria" target="janela">
+            <area shape="poly" coords="23, 143, 83, 214, 84, 254, 25, 167" href="google-glass.html#sensores" target="janela">
+        </map>
+
+        <!-- Para esconder a rollagem pode utilizar  comando "scrolling=no" no proprio IFRAME-->
+
+        <iframe src="google-glass.html" scrolling=no name="janela" id="frame-spec"></iframe>
+
+    <section>
+
+    </article>
+</section>
+
+<footer id="rodape">
+    <p>Copyright &copy; 2013 - by Gustavo Guanabara<br>
+    <a href="http://google.com" target="_blank">Facebook </a>| 
+    <a href="http://google.com" target="_blank">Twitter</a></p>
+</footer>
+    </div>
+</body>
+</html>
